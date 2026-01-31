@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souad Goubaa - Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        /* Language toggle button styles */
+        .lang-toggle {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: transparent;
+    color: #4a4a4a;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.lang-toggle:hover {
+    background: #8d8c8c;
+    border-color: #1a1a1a;
+    color: #000000;
+}
+        /* Desktop nav styles */
+        #desktop-nav .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        /* Hamburger nav adjustments */
+        #hamburger-nav .lang-toggle {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Static background blobs -->
+<!-- Static blob background -->
+<div class="background-canvas" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+
+    <!-- Indicateur de progression de scroll -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Side dot navigation -->
+<nav class="side-dot-nav" aria-label="Section navigation">
+<a class="dot" href="#profile" data-dot="profile" data-label="Profil" data-i18n-label="dot-profile" aria-label="Profile"></a>
+<a class="dot" href="#about" data-dot="about" data-label="À propos" data-i18n-label="dot-about" aria-label="About"></a>
+<a class="dot" href="#experience" data-dot="experience" data-label="Expérience" data-i18n-label="dot-experience" aria-label="Experience"></a>
+<a class="dot" href="#projects" data-dot="projects" data-label="Projets" data-i18n-label="dot-projects" aria-label="Projects"></a>
+<a class="dot" href="#contact" data-dot="contact" data-label="Contact" data-i18n-label="dot-contact" aria-label="Contact"></a>
+</nav>
+
+    
+    <nav id="desktop-nav">
+       <div class="logo">Souad Goubaa</div> 
+       <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav-about">À propos</a></li>
+            <li><a href="#experience" data-i18n="nav-experience">Expérience</a></li>
+            <li><a href="#projects" data-i18n="nav-projects">Projets</a></li>
+            <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+        <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+       </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Souad Goubaa</div>
+        <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+        <div class="hamburger-menu">
+         <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()" data-i18n="nav-about">À propos</a></li>
+            <li><a href="#experience" onclick="toggleMenu()" data-i18n="nav-experience">Expérience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()" data-i18n="nav-projects">Projets</a></li>
+            <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav-contact">Contact</a></li>
+         </div>
+        </div>
+    </nav>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Souad Goubaa Profile Picture" class="section__pic profile-pfp">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1" data-i18n="profile-hello">Bonjour, je suis</p>
+            <h1 class="title">Souad Goubaa</h1>
+            <p class="section__text__p2" data-i18n="profile-role">Étudiante en génie logiciel</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/CV-Souad.pdf')"
+                    data-i18n="btn-cv">
+                    CV
+                </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"
+                    data-i18n="btn-contact">
+                    Me contacter
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="Mon profil LinkedIn" 
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/souad-goubaa'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="Mon profil GitHub" 
+                    class="icon" 
+                    onclick="location.href='https://github.com/Souadgb'"
+                />
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <p class="section__text__p1" data-i18n="about-learn">En savoir plus</p>
+        <h1 class="title" data-i18n="about-title">À propos de moi</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/about-pic.png" 
+                alt="Profile picture" 
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                        <h3 data-i18n="about-exp-title">Expérience</h3>
+                        <p data-i18n="about-exp-desc">1+ Année<br/>Frontend Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon"/>
+                        <h3 data-i18n="about-edu-title">Éducation</h3>
+                        <p data-i18n="about-edu-desc">Cheminement Universitaire en Technologie<br/>Baccalauréat en génie logiciel</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p data-i18n="about-text">Étudiante passionnée en génie logiciel avec une solide base en développement frontend et backend. J'adore créer des interfaces utilisateur intuitives et résoudre des problèmes complexes par le code.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="experience">
+        <p class="section__text__p1" data-i18n="exp-explore">Explorez Mes</p>
+        <h1 class="title" data-i18n="exp-title">Expériences</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title" data-i18n="exp-frontend">Frontend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p data-i18n="exp-basic">Basique</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p data-i18n="exp-basic">Basique</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>React</h3>
+                                <p data-i18n="exp-basic">Basique</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Figma</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title" data-i18n="exp-backend">Backend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C</h3>
+                                <p data-i18n="exp-basic">Basique</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>PHP</h3>
+                                <p data-i18n="exp-basic">Basique</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p data-i18n="exp-basic">Basique</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+                <!-- Currently Learning -->
+                <div class="learning-section">
+                <h3>
+                    <span aria-hidden="true"> <img src="./assets/learning.png" alt="learning" class="icon"></span>
+                    <span data-i18n="learning-title">Actuellement en apprentissage</span>
+                </h3>
+
+                <div class="learning-tags">
+                    <span class="learning-tag">Maven</span>
+                    <span class="learning-tag">CI/CD Automation</span>
+                    <span class="learning-tag">Jira</span>
+                    <span class="learning-tag">JUnit</span>
+                    <span class="learning-tag">Playwright</span>
+                    <span class="learning-tag">Reverse Engineering</span>
+                    <span class="learning-tag">Machine Learning</span>
+                    <span class="learning-tag">Eclipse</span>
+                    <span class="learning-tag">Software Maintenance</span>
+                    <span class="learning-tag">TDD</span>
+                </div>
+                </div>
+        </div>
+        
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1" data-i18n="projects-recent">Mes projets récents</p>
+        <h1 class="title" data-i18n="projects-title">Projets</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+<!-- Remplacez vos 3 cartes de projet par cette structure -->
+<!-- PROJET 1 -->
+<div class="details-container color-container" data-project-id="project-1">
+    <div class="project-view-container">
+        <!-- Vue Image (par défaut) -->
+        <div class="project-image-view">
+            <div class="article-container">
+                <img 
+                src="assets/project-1.png" 
+                alt="Project 1" 
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project-1-title">Trading algorithmique - machine learning</h2>
+        </div>
+        
+        <!-- Vue Texte (cachée) -->
+        <div class="project-text-view">
+  <h2 class="experience-sub-title" style="margin-bottom: 1rem;" data-i18n="project-1-title">
+    Trading algorithmique - machine learning
+  </h2>
+
+  <div class="project-description">
+    <p data-i18n="project-1-desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+  </div>
+
+  <div class="project-tech-stack">
+    <h3 data-i18n="project-tech-title">Technologies</h3>
+    <div class="tech-list">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">TensorFlow</span>
+      <span class="tech-tag">Pandas</span>
+      <span class="tech-tag">NumPy</span>
+      <span class="tech-tag">Scikit-learn</span>
+      <span class="tech-tag">Jupyter Notebook</span>
+    </div>
+  </div>
+
+  <div class="project-features">
+    <h3 data-i18n="project-features-title">Key Features</h3>
+    <ul>
+      <li data-i18n="project-1-feature-1">Lorem ipsum dolor sit amet consectetur</li>
+      <li data-i18n="project-1-feature-2">Adipiscing elit sed do eiusmod tempor</li>
+      <li data-i18n="project-1-feature-3">Incididunt ut labore et dolore magna</li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+    
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Souadgb'" data-i18n="btn-github">
+            GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-1')">
+            Détails
+        </button>
+    </div>
+</div>
+
+<!-- PROJET 2 -->
+<div class="details-container color-container" data-project-id="project-2">
+    <div class="project-view-container">
+        <!-- Vue Image (par défaut) -->
+        <div class="project-image-view">
+            <div class="article-container">
+                <img 
+                src="assets/project-2.png" 
+                alt="Project 2" 
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project-survivalkit-title">SurvivalKit</h2>
+        </div>
+        
+        <!-- Vue Texte (cachée) -->
+        <div class="project-text-view">
+            <h2
+                class="experience-sub-title"
+                style="margin-bottom: 1rem;"
+                data-i18n="project-survivalkit-title">
+                SurvivalKit
+            </h2>
+
+            <div class="project-description">
+                <p data-i18n="project-survivalkit-desc">
+                Lorem ipsum...
+                </p>
+            </div>
+
+            <div class="project-tech-stack">
+                <h3 data-i18n="project-tech-title">Technologies</h3>
+                <div class="tech-list">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Apple Maps</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">Convex</span>
+                </div>
+            </div>
+
+            <div class="project-features">
+                <h3 data-i18n="project-features-title">Key Features</h3>
+                <ul>
+                <li data-i18n="project-survivalkit-feature-1">...</li>
+                <li data-i18n="project-survivalkit-feature-2">...</li>
+                <li data-i18n="project-survivalkit-feature-3">...</li>
+                </ul>
+            </div>
+
+</div>
+
+    </div>
+    
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Souadgb/SurvivalKit'" data-i18n="btn-github">
+            GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-2')">
+            Détails
+        </button>
+    </div>
+</div>
+
+<!-- PROJET 3 -->
+<div class="details-container color-container" data-project-id="project-3">
+    <div class="project-view-container">
+        <!-- Vue Image (par défaut) -->
+        <div class="project-image-view">
+            <div class="article-container">
+                <img 
+                src="assets/project-3.png" 
+                alt="Project 3" 
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project-3-title">Pokedex</h2>
+        </div>
+        
+        <!-- Vue Texte (cachée) -->
+        <div class="project-text-view">
+
+            <h2 
+                class="experience-sub-title" 
+                style="margin-bottom: 1rem;"
+                data-i18n="project-pokedex-title">
+                Pokedex
+            </h2>
+
+            <div class="project-description">
+                <p data-i18n="project-pokedex-desc">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                </p>
+            </div>
+
+            <div class="project-tech-stack">
+                <h3 data-i18n="project-tech-title">Technologies</h3>
+                <div class="tech-list">
+                <span class="tech-tag">Android (Java)</span>
+                <span class="tech-tag">PokeAPI</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">REST API</span>
+                </div>
+            </div>
+
+            <div class="project-features">
+                <h3 data-i18n="project-features-title">Key Features</h3>
+                <ul>
+                <li data-i18n="project-pokedex-feature-1">
+                    Nemo enim ipsam voluptatem quia
+                </li>
+                <li data-i18n="project-pokedex-feature-2">
+                    Voluptas sit aspernatur aut odit aut
+                </li>
+                <li data-i18n="project-pokedex-feature-3">
+                    Fugit sed quia consequuntur magni
+                </li>
+                </ul>
+            </div>
+
+            </div>
+
+    </div>
+    
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Souadgb/PokedexApp'" data-i18n="btn-github">
+            GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-3')">
+            Détails
+        </button>
+    </div>
+</div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="contact">
+        <p class="section__text__p1" data-i18n="contact-reach">Me joindre</p>
+        <h1 class="title" data-i18n="contact-title">Contactez moi</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon email-icon" 
+                />
+                <p><a href="mailto:souad.goubaa.1@ens.etsmtl.ca">souad.goubaa.1@ens.etsmtl.ca</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn icon" 
+                class="icon contact-icon" 
+                />
+                <p><a href="https://www.linkedin.com/in/souad-goubaa">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav-about">À propos</a></li>
+                    <li><a href="#experience" data-i18n="nav-experience">Expérience</a></li>
+                    <li><a href="#projects" data-i18n="nav-projects">Projets</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p data-i18n="footer-copyright">Copyright © 2026 Souad Goubaa. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
