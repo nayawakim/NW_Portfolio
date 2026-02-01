@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Souad Goubaa - Portfolio</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <title>Naya Wakim - Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/.png">
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="mediaqueries.css">
     <style>
@@ -62,7 +62,7 @@
 
     
     <nav id="desktop-nav">
-       <div class="logo">Souad Goubaa</div> 
+       <div class="logo">NAYA WAKIM</div> 
        <div class="nav-container">
         <ul class="nav-links">
             <li><a href="#about" data-i18n="nav-about">À propos</a></li>
@@ -75,7 +75,7 @@
     </nav>
     
     <nav id="hamburger-nav">
-        <div class="logo">Souad Goubaa</div>
+        <div class="logo">NAYA WAKIM</div>
         <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
         <div class="hamburger-menu">
          <div class="hamburger-icon" onclick="toggleMenu()">
@@ -94,16 +94,16 @@
     
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Souad Goubaa Profile Picture" class="section__pic profile-pfp">
+            <img src="./assets/profile-pic.jpg" alt="Naya Wakim Profile Picture" class="section__pic profile-pfp">
         </div>
         <div class="section__text">
             <p class="section__text__p1" data-i18n="profile-hello">Bonjour, je suis</p>
-            <h1 class="title">Souad Goubaa</h1>
+            <h1 class="title">Naya Wakim</h1>
             <p class="section__text__p2" data-i18n="profile-role">Étudiante en génie logiciel</p>
             <div class="btn-container">
                 <button 
                     class="btn btn-color-2" 
-                    onclick="window.open('./assets/CV-Souad.pdf')"
+                    onclick="window.open('./assets/CV-Naya-Wakim.pdf')"
                     data-i18n="btn-cv">
                     CV
                 </button>
@@ -119,13 +119,13 @@
                     src="./assets/linkedin.png" 
                     alt="Mon profil LinkedIn" 
                     class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/souad-goubaa'"
+                    onclick="location.href='https://www.linkedin.com/in/naya-wakim-9189111b0/'"
                 />
                 <img 
                     src="./assets/github.png" 
                     alt="Mon profil GitHub" 
                     class="icon" 
-                    onclick="location.href='https://github.com/Souadgb'"
+                    onclick="location.href='https://github.com/nayawakim'"
                 />
             </div>
         </div>
@@ -137,7 +137,7 @@
         <div class="section-container">
             <div class="section__pic-container">
                 <img 
-                src="./assets/about-pic.png" 
+                src="./assets/IMG_5233.jpeg" 
                 alt="Profile picture" 
                 class="about-pic"
                 />
@@ -162,6 +162,142 @@
         </div>
         
     </section>
+    
+    <section id="projects">
+        <p class="section__text__p1" data-i18n="projects-recent">Mes projets récents</p>
+        <h1 class="title" data-i18n="projects-title">Projets</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+<!-- PROJET 1 -->
+<div class="details-container color-container" data-project-id="project-1">
+    <div class="project-view-container">
+        <!-- Vue Image (par défaut) -->
+        <div class="project-image-view">
+            <div class="article-container">
+                <img 
+                src="assets/project-2.png" 
+                alt="Project 2" 
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project-survivalkit-title">SurvivalKit</h2>
+        </div>
+        
+        <!-- Vue Texte (cachée) -->
+        <div class="project-text-view">
+            <h2
+                class="experience-sub-title"
+                style="margin-bottom: 1rem;"
+                data-i18n="project-survivalkit-title">
+                SurvivalKit
+            </h2>
+
+            <div class="project-description">
+                <p data-i18n="project-survivalkit-desc">
+                Lorem ipsum...
+                </p>
+            </div>
+
+            <div class="project-tech-stack">
+                <h3 data-i18n="project-tech-title">Technologies</h3>
+                <div class="tech-list">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Apple Maps</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">Convex</span>
+                </div>
+            </div>
+
+            <div class="project-features">
+                <h3 data-i18n="project-features-title">Caractéristiques principales</h3>
+                <ul>
+                <li data-i18n="project-survivalkit-feature-1">...</li>
+                <li data-i18n="project-survivalkit-feature-2">...</li>
+                <li data-i18n="project-survivalkit-feature-3">...</li>
+                </ul>
+            </div>
+
+</div>
+
+    </div>
+    
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href=''" data-i18n="btn-github">
+            GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-1')">
+            Détails
+        </button>
+    </div>
+</div>
+<!-- PROJET 2 -->
+<div class="details-container color-container" data-project-id="project-2">
+    <div class="project-view-container">
+        <!-- Vue Image (par défaut) -->
+        <div class="project-image-view">
+            <div class="article-container">
+                <img 
+                src="assets/project-2.png" 
+                alt="Project 2" 
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project-geometrik-title">Geometrik</h2>
+        </div>
+        
+        <!-- Vue Texte (cachée) -->
+        <div class="project-text-view">
+            <h2
+                class="experience-sub-title"
+                style="margin-bottom: 1rem;"
+                data-i18n="project-geometrik-title">
+                Geometrik
+            </h2>
+
+            <div class="project-description">
+                <p data-i18n="project-geometrik-desc">
+                Lorem ipsum...
+                </p>
+            </div>
+
+            <div class="project-tech-stack">
+                <h3 data-i18n="project-tech-title"></h3>
+                <div class="tech-list">
+                <span class="tech-tag"></span>
+                <span class="tech-tag"></span>
+                <span class="tech-tag"></span>
+                <span class="tech-tag"></span>
+                <span class="tech-tag"></span>
+                <span class="tech-tag"></span>
+                </div>
+            </div>
+
+            <div class="project-features">
+                <h3 data-i18n="project-features-title">Caractéristiques principales</h3>
+                <ul>
+                <li data-i18n="project-geometrik-feature-1">...</li>
+                <li data-i18n="project-geometrik-feature-2">...</li>
+                <li data-i18n="project-geometrik-feature-3">...</li>
+                </ul>
+            </div>
+
+</div>
+
+    </div>
+    
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href=''" data-i18n="btn-github">
+            GitHub
+        </button>
+        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-2')">
+            Détails
+        </button>
+    </div>
+</div>
+
+     </section>
     
     <section id="experience">
         <p class="section__text__p1" data-i18n="exp-explore">Explorez Mes</p>
@@ -287,212 +423,6 @@
         
     </section>
     
-    <section id="projects">
-        <p class="section__text__p1" data-i18n="projects-recent">Mes projets récents</p>
-        <h1 class="title" data-i18n="projects-title">Projets</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-<!-- Remplacez vos 3 cartes de projet par cette structure -->
-<!-- PROJET 1 -->
-<div class="details-container color-container" data-project-id="project-1">
-    <div class="project-view-container">
-        <!-- Vue Image (par défaut) -->
-        <div class="project-image-view">
-            <div class="article-container">
-                <img 
-                src="assets/project-1.png" 
-                alt="Project 1" 
-                class="project-img"
-                />
-            </div>
-            <h2 class="experience-sub-title project-title" data-i18n="project-1-title">Trading algorithmique - machine learning</h2>
-        </div>
-        
-        <!-- Vue Texte (cachée) -->
-        <div class="project-text-view">
-  <h2 class="experience-sub-title" style="margin-bottom: 1rem;" data-i18n="project-1-title">
-    Trading algorithmique - machine learning
-  </h2>
-
-  <div class="project-description">
-    <p data-i18n="project-1-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-    </p>
-  </div>
-
-  <div class="project-tech-stack">
-    <h3 data-i18n="project-tech-title">Technologies</h3>
-    <div class="tech-list">
-      <span class="tech-tag">Python</span>
-      <span class="tech-tag">TensorFlow</span>
-      <span class="tech-tag">Pandas</span>
-      <span class="tech-tag">NumPy</span>
-      <span class="tech-tag">Scikit-learn</span>
-      <span class="tech-tag">Jupyter Notebook</span>
-    </div>
-  </div>
-
-  <div class="project-features">
-    <h3 data-i18n="project-features-title">Key Features</h3>
-    <ul>
-      <li data-i18n="project-1-feature-1">Lorem ipsum dolor sit amet consectetur</li>
-      <li data-i18n="project-1-feature-2">Adipiscing elit sed do eiusmod tempor</li>
-      <li data-i18n="project-1-feature-3">Incididunt ut labore et dolore magna</li>
-    </ul>
-  </div>
-</div>
-
-    </div>
-    
-    <div class="btn-container">
-        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Souadgb'" data-i18n="btn-github">
-            GitHub
-        </button>
-        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-1')">
-            Détails
-        </button>
-    </div>
-</div>
-
-<!-- PROJET 2 -->
-<div class="details-container color-container" data-project-id="project-2">
-    <div class="project-view-container">
-        <!-- Vue Image (par défaut) -->
-        <div class="project-image-view">
-            <div class="article-container">
-                <img 
-                src="assets/project-2.png" 
-                alt="Project 2" 
-                class="project-img"
-                />
-            </div>
-            <h2 class="experience-sub-title project-title" data-i18n="project-survivalkit-title">SurvivalKit</h2>
-        </div>
-        
-        <!-- Vue Texte (cachée) -->
-        <div class="project-text-view">
-            <h2
-                class="experience-sub-title"
-                style="margin-bottom: 1rem;"
-                data-i18n="project-survivalkit-title">
-                SurvivalKit
-            </h2>
-
-            <div class="project-description">
-                <p data-i18n="project-survivalkit-desc">
-                Lorem ipsum...
-                </p>
-            </div>
-
-            <div class="project-tech-stack">
-                <h3 data-i18n="project-tech-title">Technologies</h3>
-                <div class="tech-list">
-                <span class="tech-tag">React Native</span>
-                <span class="tech-tag">Expo</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Apple Maps</span>
-                <span class="tech-tag">OpenAI API</span>
-                <span class="tech-tag">Convex</span>
-                </div>
-            </div>
-
-            <div class="project-features">
-                <h3 data-i18n="project-features-title">Key Features</h3>
-                <ul>
-                <li data-i18n="project-survivalkit-feature-1">...</li>
-                <li data-i18n="project-survivalkit-feature-2">...</li>
-                <li data-i18n="project-survivalkit-feature-3">...</li>
-                </ul>
-            </div>
-
-</div>
-
-    </div>
-    
-    <div class="btn-container">
-        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Souadgb/SurvivalKit'" data-i18n="btn-github">
-            GitHub
-        </button>
-        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-2')">
-            Détails
-        </button>
-    </div>
-</div>
-
-<!-- PROJET 3 -->
-<div class="details-container color-container" data-project-id="project-3">
-    <div class="project-view-container">
-        <!-- Vue Image (par défaut) -->
-        <div class="project-image-view">
-            <div class="article-container">
-                <img 
-                src="assets/project-3.png" 
-                alt="Project 3" 
-                class="project-img"
-                />
-            </div>
-            <h2 class="experience-sub-title project-title" data-i18n="project-3-title">Pokedex</h2>
-        </div>
-        
-        <!-- Vue Texte (cachée) -->
-        <div class="project-text-view">
-
-            <h2 
-                class="experience-sub-title" 
-                style="margin-bottom: 1rem;"
-                data-i18n="project-pokedex-title">
-                Pokedex
-            </h2>
-
-            <div class="project-description">
-                <p data-i18n="project-pokedex-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
-            </div>
-
-            <div class="project-tech-stack">
-                <h3 data-i18n="project-tech-title">Technologies</h3>
-                <div class="tech-list">
-                <span class="tech-tag">Android (Java)</span>
-                <span class="tech-tag">PokeAPI</span>
-                <span class="tech-tag">SQLite</span>
-                <span class="tech-tag">REST API</span>
-                </div>
-            </div>
-
-            <div class="project-features">
-                <h3 data-i18n="project-features-title">Key Features</h3>
-                <ul>
-                <li data-i18n="project-pokedex-feature-1">
-                    Nemo enim ipsam voluptatem quia
-                </li>
-                <li data-i18n="project-pokedex-feature-2">
-                    Voluptas sit aspernatur aut odit aut
-                </li>
-                <li data-i18n="project-pokedex-feature-3">
-                    Fugit sed quia consequuntur magni
-                </li>
-                </ul>
-            </div>
-
-            </div>
-
-    </div>
-    
-    <div class="btn-container">
-        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Souadgb/PokedexApp'" data-i18n="btn-github">
-            GitHub
-        </button>
-        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-3')">
-            Détails
-        </button>
-    </div>
-</div>
-            </div>
-        </div>
-        
-    </section>
-    
     <section id="contact">
         <p class="section__text__p1" data-i18n="contact-reach">Me joindre</p>
         <h1 class="title" data-i18n="contact-title">Contactez moi</h1>
@@ -503,7 +433,7 @@
                 alt="Email icon" 
                 class="icon contact-icon email-icon" 
                 />
-                <p><a href="mailto:souad.goubaa.1@ens.etsmtl.ca">souad.goubaa.1@ens.etsmtl.ca</a></p>
+                <p><a href="mailto:naya.wakim.1@ens.etsmtl.ca">naya.wakim.1@ens.etsmtl.ca</a></p>
             </div>
             <div class="contact-info-container">
                 <img 
@@ -511,11 +441,10 @@
                 alt="LinkedIn icon" 
                 class="icon contact-icon" 
                 />
-                <p><a href="https://www.linkedin.com/in/souad-goubaa">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/naya-wakim-9189111b0">LinkedIn</a></p>
             </div>
         </div>
     </section>
-    
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -527,7 +456,7 @@
                 </ul>
             </div>
         </nav>
-        <p data-i18n="footer-copyright">Copyright © 2026 Souad Goubaa. Tous droits réservés.</p>
+        <p data-i18n="footer-copyright">Copyright © 2026 Naya Wakim. Tous droits réservés.</p>
     </footer>
     
     <script src="script.js"></script>

@@ -25,10 +25,10 @@ const translations = {
         'about-learn': 'Learn More',
         'about-title': 'About Me',
         'about-exp-title': 'Experience',
-        'about-exp-desc': '7+ Projects<br/>&<br/>Hackathons',
+        'about-exp-desc': 'Projects<br/>&<br/>Hackathons',
         'about-edu-title': 'Education',
         'about-edu-desc': 'University Path in Technology (2024) <br/>Bachelor in Software Engineering (2025-present)',
-        'about-text': 'Passionate software engineering student with a strong foundation in frontend and backend development. I love creating intuitive user interfaces and solving complex problems through code.',
+        'about-text': 'Curious, detail-oriented, and motivated, I enjoy taking on technical challenges and deepening my knowledge in programming and software technologies. My academic background has helped me develop strong analytical skills, problem-solving abilities, and the ability to work effectively in a team.',
         
         // Experience section
         'exp-explore': 'Explore My',
@@ -50,15 +50,7 @@ const translations = {
 
         // project details
 
-        //project 1
-        'project-tech-title': 'Technologies',
-        'project-features-title': 'Key Features',
-        'project-1-desc': 'Algorithmic trading project built in Jupyter Notebook, focused on quantitative market analysis. Implements technical indicators and tests trading strategies in Python.',
-        'project-1-feature-1': 'Market data analysis & preprocessing',
-        'project-1-feature-2': 'Technical indicators (e.g., RSI) + feature engineering',
-        'project-1-feature-3': 'Strategy testing / evaluation (backtesting mindset)',
-
-        //project 2 
+        //project 1 
         'project-survivalkit-title': 'SurvivalKit — iOS App (Hackathon)',
         'project-survivalkit-desc': 'Mobile app built in 24 hours during a hackathon: context-aware emergency recommendations powered by geolocation and AI. Fast, action-oriented user experience.',
         'project-survivalkit-feature-1': 'Geolocation + map to find nearby resources',
@@ -66,12 +58,12 @@ const translations = {
         'project-survivalkit-feature-3': 'Smooth iOS experience (React Native + Expo) with polished UI',
 
 
-        //project 3
-        'project-pokedex-title': 'Pokedex — Android Application',
-        'project-pokedex-desc': 'Android Pokédex application using PokeAPI and a local SQLite database. Browse Pokémon, view detailed profiles, and manage favorites.',
-        'project-pokedex-feature-1': 'Dynamic Pokémon list fetched from PokeAPI',
-        'project-pokedex-feature-2': 'Detailed Pokémon profile (types, height, weight, image)',
-        'project-pokedex-feature-3': 'Favorites management with local persistence (SQLite)',
+        //project 
+        'project-geometrik-title': 'Geometrik — Video game',
+        'project-geometrik-desc': 'Action game inspired by Vampire Survivors, featuring geometric heroes battling waves of enemies.',
+        'project-geometrik-feature-1': 'A Web Client and a Desktop Client',
+        'project-geometrik-feature-2': 'Score system and leaderboard for top players',
+        'project-geometrik-feature-3': 'Varied enemies and bosses represented by different geometric shapes',
 
 
 
@@ -87,7 +79,8 @@ const translations = {
         'contact-title': 'Contact Me',
         
         // Footer
-        'footer-copyright': 'Copyright © 2026 Souad Goubaa. All rights reserved.'
+        'project-features-title': 'Key Features',
+        'footer-copyright': 'Copyright © 2026 Naya Wakim. All rights reserved.'
     },
     fr: {
         // Navigation
@@ -106,10 +99,10 @@ const translations = {
         'about-learn': 'En savoir plus',
         'about-title': 'À propos de moi',
         'about-exp-title': 'Expérience',
-        'about-exp-desc': '7+ Projets<br/>&</br/>Hackathons',
+        'about-exp-desc': 'Plusieurs projets<br/>&</br/>Hackathons',
         'about-edu-title': 'Éducation',
         'about-edu-desc': 'Cheminement Universitaire en Technologie (2024) <br/>Baccalauréat en génie logiciel (2025-present)',
-        'about-text': 'Étudiante passionnée en génie logiciel avec une solide base en développement frontend et backend. J\'adore créer des interfaces utilisateur intuitives et résoudre des problèmes complexes par le code.',
+        'about-text': 'Curieuse, rigoureuse et motivée, j’aime relever des défis techniques et approfondir mes connaissances en programmation et en technologies logicielles. Mon parcours académique m’a permis de développer une bonne capacité d’analyse, de résolution de problèmes et de travail en équipe.',
         
         // Experience section
         'exp-explore': 'Explorez Mes',
@@ -133,26 +126,18 @@ const translations = {
         // project details
 
             //Projet 1
-        'project-tech-title': 'Technologies',
-        'project-features-title': 'Fonctionnalités clés',
-        'project-1-desc': 'Projet de trading algorithmique développé sur Jupyter Notebook, axé sur l’analyse quantitative des marchés. Implémentation d’indicateurs techniques et tests de stratégies en Python.',
-        'project-1-feature-1': 'Analyse et préparation de données de marché',
-        'project-1-feature-2': 'Indicateurs techniques (ex. RSI) + features',
-        'project-1-feature-3': 'Tests et évaluation de stratégies (logique backtesting)',
-
-            //Projet 2
         'project-survivalkit-title': 'SurvivalKit — App iOS (Hackathon)',
         'project-survivalkit-desc': "Application mobile créée en 24h lors d’un hackathon : recommandations contextualisées en situation d’urgence grâce à la géolocalisation et l’IA. Interface rapide et orientée action.",
         'project-survivalkit-feature-1': 'Géolocalisation et carte pour repérer des ressources à proximité',
         'project-survivalkit-feature-2': 'Recommandations assistées par IA selon le contexte (besoin / situation)',
         'project-survivalkit-feature-3': 'Expérience iOS fluide (React Native + Expo) avec UI optimisée',
 
-            //project 3
-        'project-pokedex-title': 'Pokédex — Application Android',
-        'project-pokedex-desc': 'Application Pokédex Android utilisant PokeAPI et une base de données SQLite. Consultation des Pokémon, fiche détaillée et gestion des favoris.',
-        'project-pokedex-feature-1': 'Liste des Pokémon récupérés dynamiquement via PokeAPI',
-        'project-pokedex-feature-2': 'Fiche détaillée d’un Pokémon (types, taille, poids, image)',
-        'project-pokedex-feature-3': 'Gestion des favoris avec persistance locale (SQLite)',
+            //project 2
+        'project-geometrik-title': 'Geometrik — Jeu vidéo ',
+        'project-geometrik-desc': 'Jeu d’action inspiré de Vampire Survivors mettant en scène des héros géométriques face à des vagues d’ennemis.',
+        'project-geometrik-feature-1': 'Un Client Web et un Client Desktop',
+        'project-geometrik-feature-2': 'Système de score et classement des meilleurs joueurs',
+        'project-geometrik-feature-3': 'Ennemis et boss variés représentés par différentes formes géométriques',
 
 
         
@@ -168,9 +153,11 @@ const translations = {
         'dot-projects': 'Projets',
         'dot-contact': 'Contact',
 
-        
+        // Project features heading
+        'project-features-title': 'Caractéristiques principales',
+
         // Footer
-        'footer-copyright': 'Copyright © 2026 Souad Goubaa. Tous droits réservés.'
+        'footer-copyright': 'Copyright © 2026 Naya Wakim. Tous droits réservés.'
     }
 };
 
