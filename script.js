@@ -35,6 +35,7 @@ const translations = {
         'exp-title': 'Experience',
         'exp-frontend': 'Frontend',
         'exp-backend': 'Backend',
+        'exp-other': 'Libraries & Other',
         'exp-experienced': 'Experienced',
         'exp-basic': 'Basic',
         
@@ -109,6 +110,7 @@ const translations = {
         'exp-title': 'Expériences',
         'exp-frontend': 'Frontend',
         'exp-backend': 'Backend',
+        'exp-other': 'Librairies et autres',
         'exp-experienced': 'Expérimenté',
         'exp-basic': 'Basique',
         'learning-title': 'Actuellement en apprentissage',

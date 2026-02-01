@@ -14,7 +14,7 @@
 
 body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
-            color: #1a1a1a;
+            color: #ede6e2;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -28,7 +28,7 @@ body {
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(180deg, #fafafa 0%, #f5f5f3 100%);
+            background: linear-gradient(180deg, #0a0a0a 0%, #121a25 100%);
         }
 
         .blob {
@@ -42,7 +42,7 @@ body {
         .blob-1 {
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(135, 175, 235, 0.631) 0%, rgba(250, 152, 25, 0) 70%);
+            background: radial-gradient(circle, rgba(211, 4, 93, 0.5) 0%, rgba(12, 142, 244, 0) 70%);
             top: 10%;
             right: 10%;
             animation-delay: 0s;
@@ -51,7 +51,7 @@ body {
         .blob-2 {
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(136, 202, 213, 0.346) 0%, rgba(182, 201, 207, 0) 99%);
+            background: radial-gradient(circle, rgba(161, 98, 161, 0.4) 0%, rgba(209, 187, 173, 0) 99%);
             bottom: 20%;
             left: 5%;
             animation-delay: 0.5s;
@@ -60,7 +60,7 @@ body {
         .blob-3 {
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(97, 178, 225, 0.693) 0%, rgba(250, 152, 25, 0) 70%);
+            background: radial-gradient(circle, rgba(12, 142, 244, 0.6) 0%, rgba(211, 4, 93, 0) 70%);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -105,28 +105,28 @@ a, button {
   gap: 0.85rem;
   padding: 0.75rem 0.6rem;
   border-radius: 999px;
-  background: rgba(250, 250, 250, 0.55);
+  background: rgba(43, 56, 76, 0.55);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(211, 4, 93, 0.2);
 }
 
 .side-dot-nav .dot {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: rgba(26, 26, 26, 0.28);
+  background: rgba(211, 4, 93, 0.3);
   transition: transform 0.2s ease, background 0.2s ease;
   position: relative;
 }
 
 .side-dot-nav .dot:hover {
   transform: scale(1.2);
-  background: rgba(26, 26, 26, 0.45);
+  background: rgba(12, 142, 244, 0.5);
 }
 
 .side-dot-nav .dot.active {
-  background: rgba(26, 26, 26, 0.9);
+  background: #0C8EF4;
   transform: scale(1.15);
 }
 
@@ -150,9 +150,9 @@ a, button {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  color: rgba(26, 26, 26, 0.9);
-  background: rgba(250, 250, 250, 0.85);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #0C8EF4;
+  background: #2B384C;
+  border: 1px solid rgba(12, 142, 244, 0.3);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   white-space: nowrap;
@@ -209,7 +209,7 @@ a, button {
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: -0.02em;
-    color: #1a1a1a;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 0.5rem;
 }
@@ -219,7 +219,7 @@ a, button {
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #666;
+    color: #D3045D;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -228,12 +228,12 @@ a, button {
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: -0.01em;
-    color: #4a4a4a;
+    color: #ede6e2;
     margin-bottom: 1rem;
 }
 
 p {
-    color: #4a4a4a;
+    color: #ede6e2;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -241,14 +241,14 @@ p {
 h3 {
     font-weight: 500;
     letter-spacing: -0.01em;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .experience-sub-title {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -0.01em;
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
@@ -259,7 +259,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-    background: rgba(250, 250, 250, 0.8);
+    background: rgba(18, 26, 37, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -271,10 +271,20 @@ a {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: -0.01em;
-    color: #1a1a1a;
+    color: #ede6e2;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo:hover {
@@ -290,7 +300,7 @@ a {
 }
 
 .nav-links a {
-    color: #4a4a4a;
+    color: #ede6e2;
     text-decoration: none;
     position: relative;
     transition: color 0.2s ease;
@@ -303,12 +313,12 @@ a {
     left: 0;
     width: 0;
     height: 1px;
-    background: #1a1a1a;
+    background: #D3045D;
     transition: width 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #1a1a1a !important;
+    color: #0C8EF4 !important;
     text-decoration: none !important;
 }
 
@@ -339,8 +349,8 @@ a {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: #1a1a1a;
-    border: #4a4a4a 0.5px solid;
+    background-color: #2B384C;
+    border: #A162A1 0.5px solid;
     transition: all 0.2s ease;
 }
 
@@ -364,14 +374,14 @@ a {
     position: absolute;
     top: 100%;
     right: 0;
-    background: rgba(250, 250, 250, 0.95);
+    background: rgba(18, 26, 37, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2B384C;
     border-top: none;
     transition: all 0.3s ease-in-out;
 }
@@ -385,7 +395,7 @@ a {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: #ede6e2;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -397,8 +407,8 @@ a {
 /*  SECTIONS  */
 
 section {
-    padding-top: 6vh;
-    height: 96vh;
+    padding-top: 3rem;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -488,6 +498,11 @@ article .icon {
     cursor: default;
 }
 
+.about-details-container .icon {
+    cursor: default;
+    pointer-events: none;
+}
+
 article:hover .icon {
     transform: scale(1.05);
 }
@@ -524,30 +539,30 @@ article:hover .icon {
 
 .btn-color-1,
 .btn-color-2 {
-    border-color: #1a1a1a;
+    border-color: #0C8EF4;
 }
 
 .btn-color-1 {
-    background: #353535;
+    background: #0C8EF4;
     color: #ffffff;
 }
 
 .btn-color-1:hover {
-    background: #000000;
+    background: #0C287B;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(12, 40, 123, 0.3);
 }
 
 .btn-color-2 {
     background: transparent;
-    color: #1a1a1a;
+    color: #D3045D;
 }
 
 .btn-color-2:hover {
-    background: #1a1a1a;
+    background: #D3045D;
     color: #ffffff;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(211, 4, 93, 0.3);
 }
 
 .btn:active {
@@ -558,9 +573,9 @@ article:hover .icon {
 
 .lang-toggle {
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid #D3045D;
     background: transparent;
-    color: #4a4a4a;
+    color: #ede6e2;
     font-size: 0.8125rem;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -569,9 +584,9 @@ article:hover .icon {
 }
 
 .lang-toggle:hover {
-    background: #8d8c8c;
-    border-color: #1a1a1a;
-    color: #000000;
+    background: #0C8EF4;
+    border-color: #0C8EF4;
+    color: #ffffff;
 }
 
 /*  SECTION ABOUT  */
@@ -607,10 +622,10 @@ article:hover .icon {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: #ffffff !important;
+    background: #1a2332 !important;
     border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.08) !important;
-    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.04);
+    border: 1px solid #2B384C !important;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -622,8 +637,8 @@ article:hover .icon {
 }
 
 .color-container {
-    background: #ffffff !important;
-    border: 1.9px solid rgba(0, 0, 0, 0.08) !important;
+    background: #1a2332 !important;
+    border: 1.9px solid #2B384C !important;
 }
 
 .color-container:hover {
@@ -655,7 +670,8 @@ article:hover .icon {
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
     gap: 0.75rem;
 }
 
@@ -666,7 +682,7 @@ article div h3 {
 
 article div p {
     font-size: 0.8125rem;
-    color: #999;
+    color: #A162A1;
 }
 
 
@@ -689,12 +705,12 @@ article div p {
 
 .project-title {
     margin: 1rem;
-    color: black;
+    color: #ffffff;
 }
 
 .project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+    color: #ede6e2;
+    border-color: #D3045D;
 }
 
 /* Vue des projets - image et texte */
@@ -748,7 +764,7 @@ article div p {
 .project-description {
     font-size: 0.9375rem;
     line-height: 1.6;
-    color: #4a4a4a;
+    color: #ede6e2;
     margin-bottom: 1.5rem;
 }
 
@@ -759,7 +775,7 @@ article div p {
 .project-tech-stack h3 {
     font-size: 1rem;
     font-weight: 500;
-    color: #1a1a1a;
+    color: #0C8EF4;
     margin-bottom: 0.75rem;
 }
 
@@ -771,11 +787,11 @@ article div p {
 
 .tech-tag {
     padding: 0.375rem 0.75rem;
-    background: #f5f5f5;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #2B384C;
+    border: 1px solid #0C8EF4;
     border-radius: 4px;
     font-size: 0.8125rem;
-    color: #4a4a4a;
+    color: #ede6e2;
 }
 
 .project-features {
@@ -785,7 +801,7 @@ article div p {
 .project-features h3 {
     font-size: 1rem;
     font-weight: 500;
-    color: #1a1a1a;
+    color: #0C8EF4;
     margin-bottom: 0.75rem;
 }
 
@@ -797,7 +813,7 @@ article div p {
 .project-features li {
     font-size: 0.875rem;
     line-height: 1.6;
-    color: #4a4a4a;
+    color: #ede6e2;
     margin-bottom: 0.5rem;
     padding-left: 1.25rem;
     position: relative;
@@ -807,7 +823,7 @@ article div p {
     content: "•";
     position: absolute;
     left: 0;
-    color: #1a1a1a;
+    color: #D3045D;
     font-weight: 600;
 }
 
@@ -815,18 +831,18 @@ article div p {
 .learning-section {
   background: linear-gradient(
     135deg,
-    rgba(126, 190, 235, 0.1) 0%,
-    rgba(182, 201, 207, 0.10) 100%
+    rgba(43, 56, 76, 0.3) 0%,
+    rgba(211, 4, 93, 0.1) 100%
   );
   padding: 2rem;
   border-radius: 14px;
   margin-top: 2.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid #2B384C;
 
   /* Glass feel */
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.216);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .learning-section h3 {
@@ -835,22 +851,23 @@ article div p {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .learning-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  justify-content: center;
 }
 
 .learning-tag {
   padding: 0.55rem 1.05rem;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(211, 4, 93, 0.15);
+  border: 1px solid #D3045D;
   border-radius: 10px;
   font-size: 0.875rem;
-  color: #1a1a1a;
+  color: #ede6e2;
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -860,7 +877,7 @@ article div p {
 
 .learning-tag:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 18px rgba(211, 4, 93, 0.2);
 }
 
 
@@ -870,16 +887,17 @@ article div p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: auto;
+    padding-bottom: 3rem;
 }
 
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    background: #ffffff !important;
-    border: 1px solid rgba(0, 0, 0, 0.08) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    background: #1a2332 !important;
+    border: 1px solid #2B384C !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -897,12 +915,12 @@ article div p {
 }
 
 .contact-info-container a {
-    color: #4a4a4a;
+    color: #0C8EF4;
     text-decoration: none;
 }
 
 .contact-info-container a:hover {
-    color: #1a1a1a;
+    color: #D3045D;
 }
 
 .contact-icon {
@@ -917,19 +935,23 @@ article div p {
 
 footer {
     height: 26vh;
-    margin: 0 rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-    background: #fafafa;
+    margin: 0;
+    border-top: 1px solid #2B384C;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
     text-align: center;
-    color: #999;
+    color: #A162A1;
     font-size: 0.8125rem;
 }
 
 footer a {
-    color: #4a4a4a;
+    color: #0C8EF4;
 }
 
 footer a:hover {
@@ -944,7 +966,7 @@ footer a:hover {
     left: 0;
     width: 0%;
     height: 2px;
-    background: #1a1a1a;
+    background: #0C8EF4;
     z-index: 9999;
     transition: width 0.1s linear;
 }
@@ -975,7 +997,7 @@ footer a:hover {
         position: sticky;
         top: 0;
         z-index: 999;
-        background: rgba(250, 250, 250, 0.9);
+        background: rgba(18, 26, 37, 0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         transition: background 0.3s ease;
@@ -1099,7 +1121,7 @@ footer a:hover {
     
     #socials-container .icon:active { 
         transform: scale(0.9);
-        transition: transform 0.1s ease;
+        transition: transform 0.1s ease; 
     }
     
     .icon:active {
@@ -1153,8 +1175,7 @@ footer a:hover {
     }
     
     footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
+        display: none;
     }
     
     .about-containers,

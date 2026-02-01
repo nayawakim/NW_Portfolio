@@ -1,97 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naya Wakim - Portfolio</title>
-    <link rel="icon" type="image/png" href="./assets/.png">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="image/png" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <style>
         /* Language toggle button styles */
         .lang-toggle {
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    background: transparent;
-    color: #4a4a4a;
-    font-size: 0.8125rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
+            padding: 0.5rem 1rem;
+            border: 1px solid #0C8EF4;
+            background: transparent;
+            color: #ede6e2;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
 
-.lang-toggle:hover {
-    background: #8d8c8c;
-    border-color: #1a1a1a;
-    color: #000000;
-}
+        .lang-toggle:hover {
+            background: #0C8EF4;
+            border-color: #0C8EF4;
+            color: #ffffff;
+        }
+
         /* Desktop nav styles */
         #desktop-nav .nav-container {
             display: flex;
             align-items: center;
             gap: 2rem;
         }
+
         /* Hamburger nav adjustments */
         #hamburger-nav .lang-toggle {
             margin-right: 1rem;
         }
     </style>
 </head>
+
 <body>
     <!-- Static background blobs -->
-<!-- Static blob background -->
-<div class="background-canvas" aria-hidden="true">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-</div>
+    <!-- Static blob background -->
+    <div class="background-canvas" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
 
 
     <!-- Indicateur de progression de scroll -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Side dot navigation -->
-<nav class="side-dot-nav" aria-label="Section navigation">
-<a class="dot" href="#profile" data-dot="profile" data-label="Profil" data-i18n-label="dot-profile" aria-label="Profile"></a>
-<a class="dot" href="#about" data-dot="about" data-label="À propos" data-i18n-label="dot-about" aria-label="About"></a>
-<a class="dot" href="#experience" data-dot="experience" data-label="Expérience" data-i18n-label="dot-experience" aria-label="Experience"></a>
-<a class="dot" href="#projects" data-dot="projects" data-label="Projets" data-i18n-label="dot-projects" aria-label="Projects"></a>
-<a class="dot" href="#contact" data-dot="contact" data-label="Contact" data-i18n-label="dot-contact" aria-label="Contact"></a>
-</nav>
-
-    
-    <nav id="desktop-nav">
-       <div class="logo">NAYA WAKIM</div> 
-       <div class="nav-container">
-        <ul class="nav-links">
-            <li><a href="#about" data-i18n="nav-about">À propos</a></li>
-            <li><a href="#experience" data-i18n="nav-experience">Expérience</a></li>
-            <li><a href="#projects" data-i18n="nav-projects">Projets</a></li>
-            <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
-        </ul>
-        <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
-       </div>
+    <nav class="side-dot-nav" aria-label="Section navigation">
+        <a class="dot" href="#profile" data-dot="profile" data-label="Profil" data-i18n-label="dot-profile"
+            aria-label="Profile"></a>
+        <a class="dot" href="#about" data-dot="about" data-label="À propos" data-i18n-label="dot-about"
+            aria-label="About"></a>
+        <a class="dot" href="#projects" data-dot="projects" data-label="Projets" data-i18n-label="dot-projects"
+            aria-label="Projects"></a>
+        <a class="dot" href="#experience" data-dot="experience" data-label="Expérience" data-i18n-label="dot-experience"
+            aria-label="Experience"></a>
+        <a class="dot" href="#contact" data-dot="contact" data-label="Contact" data-i18n-label="dot-contact"
+            aria-label="Contact"></a>
     </nav>
-    
-    <nav id="hamburger-nav">
-        <div class="logo">NAYA WAKIM</div>
-        <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
-        <div class="hamburger-menu">
-         <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-         </div>
-         <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()" data-i18n="nav-about">À propos</a></li>
-            <li><a href="#experience" onclick="toggleMenu()" data-i18n="nav-experience">Expérience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()" data-i18n="nav-projects">Projets</a></li>
-            <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav-contact">Contact</a></li>
-         </div>
+
+
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo" class="logo-img" />
+            NAYA WAKIM
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav-about">À propos</a></li>
+                <li><a href="#experience" data-i18n="nav-experience">Expérience</a></li>
+                <li><a href="#projects" data-i18n="nav-projects">Projets</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
         </div>
     </nav>
-    
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo" class="logo-img" />
+            NAYA WAKIM
+        </div>
+        <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" data-i18n="nav-about">À propos</a></li>
+                <li><a href="#experience" onclick="toggleMenu()" data-i18n="nav-experience">Expérience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()" data-i18n="nav-projects">Projets</a></li>
+                <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav-contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.jpg" alt="Naya Wakim Profile Picture" class="section__pic profile-pfp">
@@ -101,204 +116,183 @@
             <h1 class="title">Naya Wakim</h1>
             <p class="section__text__p2" data-i18n="profile-role">Étudiante en génie logiciel</p>
             <div class="btn-container">
-                <button 
-                    class="btn btn-color-2" 
-                    onclick="window.open('./assets/CV-Naya-Wakim.pdf')"
-                    data-i18n="btn-cv">
+                <button class="btn btn-color-1" onclick="window.open('./assets/CV-Naya-Wakim.pdf')" data-i18n="btn-cv">
                     CV
                 </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'"
-                    data-i18n="btn-contact">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'" data-i18n="btn-contact">
                     Me contacter
                 </button>
             </div>
             <div id="socials-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="Mon profil LinkedIn" 
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/naya-wakim-9189111b0/'"
-                />
-                <img 
-                    src="./assets/github.png" 
-                    alt="Mon profil GitHub" 
-                    class="icon" 
-                    onclick="location.href='https://github.com/nayawakim'"
-                />
+                <img src="./assets/linkedin.png" alt="Mon profil LinkedIn" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/naya-wakim-9189111b0/'" />
+                <img src="./assets/github.png" alt="Mon profil GitHub" class="icon"
+                    onclick="location.href='https://github.com/nayawakim'" />
             </div>
         </div>
     </section>
-    
+
     <section id="about">
         <p class="section__text__p1" data-i18n="about-learn">En savoir plus</p>
         <h1 class="title" data-i18n="about-title">À propos de moi</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img 
-                src="./assets/IMG_5233.jpeg" 
-                alt="Profile picture" 
-                class="about-pic"
-                />
+                <img src="./assets/IMG_5233.jpeg" alt="Profile picture" class="about-pic" />
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
                         <h3 data-i18n="about-exp-title">Expérience</h3>
-                        <p data-i18n="about-exp-desc">1+ Année<br/>Frontend Developer</p>
+                        <p data-i18n="about-exp-desc">1+ Année<br />Frontend Developer</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon"/>
+                        <img src="./assets/education.png" alt="education icon" class="icon" />
                         <h3 data-i18n="about-edu-title">Éducation</h3>
-                        <p data-i18n="about-edu-desc">Cheminement Universitaire en Technologie<br/>Baccalauréat en génie logiciel</p>
+                        <p data-i18n="about-edu-desc">Cheminement Universitaire en Technologie<br />Baccalauréat en
+                            génie logiciel</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p data-i18n="about-text">Étudiante passionnée en génie logiciel avec une solide base en développement frontend et backend. J'adore créer des interfaces utilisateur intuitives et résoudre des problèmes complexes par le code.</p>
+                    <p data-i18n="about-text">Étudiante passionnée en génie logiciel avec une solide base en
+                        développement frontend et backend. J'adore créer des interfaces utilisateur intuitives et
+                        résoudre des problèmes complexes par le code.</p>
                 </div>
             </div>
         </div>
-        
+
     </section>
-    
+
     <section id="projects">
         <p class="section__text__p1" data-i18n="projects-recent">Mes projets récents</p>
         <h1 class="title" data-i18n="projects-title">Projets</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-<!-- PROJET 1 -->
-<div class="details-container color-container" data-project-id="project-1">
-    <div class="project-view-container">
-        <!-- Vue Image (par défaut) -->
-        <div class="project-image-view">
-            <div class="article-container">
-                <img 
-                src="assets/project-2.png" 
-                alt="Project 2" 
-                class="project-img"
-                />
-            </div>
-            <h2 class="experience-sub-title project-title" data-i18n="project-survivalkit-title">SurvivalKit</h2>
-        </div>
-        
-        <!-- Vue Texte (cachée) -->
-        <div class="project-text-view">
-            <h2
-                class="experience-sub-title"
-                style="margin-bottom: 1rem;"
-                data-i18n="project-survivalkit-title">
-                SurvivalKit
-            </h2>
+                <!-- PROJET 1 -->
+                <div class="details-container color-container" data-project-id="project-1">
+                    <div class="project-view-container">
+                        <!-- Vue Image (par défaut) -->
+                        <div class="project-image-view">
+                            <div class="article-container">
+                                <img src="assets/project-1.png" alt="Project 1" class="project-img" />
+                            </div>
+                            <h2 class="experience-sub-title project-title" data-i18n="project-survivalkit-title">
+                                SurvivalKit</h2>
+                        </div>
 
-            <div class="project-description">
-                <p data-i18n="project-survivalkit-desc">
-                Lorem ipsum...
-                </p>
-            </div>
+                        <!-- Vue Texte (cachée) -->
+                        <div class="project-text-view">
+                            <h2 class="experience-sub-title" style="margin-bottom: 1rem;"
+                                data-i18n="project-survivalkit-title">
+                                SurvivalKit
+                            </h2>
 
-            <div class="project-tech-stack">
-                <h3 data-i18n="project-tech-title">Technologies</h3>
-                <div class="tech-list">
-                <span class="tech-tag">React Native</span>
-                <span class="tech-tag">Expo</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Apple Maps</span>
-                <span class="tech-tag">OpenAI API</span>
-                <span class="tech-tag">Convex</span>
+                            <div class="project-description">
+                                <p data-i18n="project-survivalkit-desc">
+                                    Lorem ipsum...
+                                </p>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <h3 data-i18n="project-tech-title">Technologies</h3>
+                                <div class="tech-list">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">Expo</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Apple Maps</span>
+                                    <span class="tech-tag">OpenAI API</span>
+                                    <span class="tech-tag">Convex</span>
+                                </div>
+                            </div>
+
+                            <div class="project-features">
+                                <h3 data-i18n="project-features-title">Caractéristiques principales</h3>
+                                <ul>
+                                    <li data-i18n="project-survivalkit-feature-1">...</li>
+                                    <li data-i18n="project-survivalkit-feature-2">...</li>
+                                    <li data-i18n="project-survivalkit-feature-3">...</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nayawakim/AMC-2025'" data-i18n="btn-github">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn project-details-btn"
+                            onclick="toggleProjectView('project-1')">
+                            Détails
+                        </button>
+                    </div>
                 </div>
-            </div>
+                <!-- PROJET 2 -->
+                <div class="details-container color-container" data-project-id="project-2">
+                    <div class="project-view-container">
+                        <!-- Vue Image (par défaut) -->
+                        <div class="project-image-view">
+                            <div class="article-container">
+                                <img src="assets/project-2.png" alt="Project 2" class="project-img" />
+                            </div>
+                            <h2 class="experience-sub-title project-title" data-i18n="project-geometrik-title">Geometrik
+                            </h2>
+                        </div>
 
-            <div class="project-features">
-                <h3 data-i18n="project-features-title">Caractéristiques principales</h3>
-                <ul>
-                <li data-i18n="project-survivalkit-feature-1">...</li>
-                <li data-i18n="project-survivalkit-feature-2">...</li>
-                <li data-i18n="project-survivalkit-feature-3">...</li>
-                </ul>
-            </div>
+                        <!-- Vue Texte (cachée) -->
+                        <div class="project-text-view">
+                            <h2 class="experience-sub-title" style="margin-bottom: 1rem;"
+                                data-i18n="project-geometrik-title">
+                                Geometrik
+                            </h2>
 
-</div>
+                            <div class="project-description">
+                                <p data-i18n="project-geometrik-desc">
+                                    Lorem ipsum...
+                                </p>
+                            </div>
 
-    </div>
-    
-    <div class="btn-container">
-        <button class="btn btn-color-2 project-btn" onclick="location.href=''" data-i18n="btn-github">
-            GitHub
-        </button>
-        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-1')">
-            Détails
-        </button>
-    </div>
-</div>
-<!-- PROJET 2 -->
-<div class="details-container color-container" data-project-id="project-2">
-    <div class="project-view-container">
-        <!-- Vue Image (par défaut) -->
-        <div class="project-image-view">
-            <div class="article-container">
-                <img 
-                src="assets/project-2.png" 
-                alt="Project 2" 
-                class="project-img"
-                />
-            </div>
-            <h2 class="experience-sub-title project-title" data-i18n="project-geometrik-title">Geometrik</h2>
-        </div>
-        
-        <!-- Vue Texte (cachée) -->
-        <div class="project-text-view">
-            <h2
-                class="experience-sub-title"
-                style="margin-bottom: 1rem;"
-                data-i18n="project-geometrik-title">
-                Geometrik
-            </h2>
+                            <div class="project-tech-stack">
+                                <h3 data-i18n="project-tech-title">Technologies</h3>
+                                <div class="tech-list">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">C#</span>
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
 
-            <div class="project-description">
-                <p data-i18n="project-geometrik-desc">
-                Lorem ipsum...
-                </p>
-            </div>
+                            <div class="project-features">
+                                <h3 data-i18n="project-features-title">Caractéristiques principales</h3>
+                                <ul>
+                                    <li data-i18n="project-geometrik-feature-1">...</li>
+                                    <li data-i18n="project-geometrik-feature-2">...</li>
+                                    <li data-i18n="project-geometrik-feature-3">...</li>
+                                </ul>
+                            </div>
 
-            <div class="project-tech-stack">
-                <h3 data-i18n="project-tech-title"></h3>
-                <div class="tech-list">
-                <span class="tech-tag"></span>
-                <span class="tech-tag"></span>
-                <span class="tech-tag"></span>
-                <span class="tech-tag"></span>
-                <span class="tech-tag"></span>
-                <span class="tech-tag"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nexbit.ca/geometrik'" data-i18n="btn-play">
+                            Play
+                        </button>
+                        <button class="btn btn-color-2 project-btn project-details-btn"
+                            onclick="toggleProjectView('project-2')">
+                            Détails
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project-features">
-                <h3 data-i18n="project-features-title">Caractéristiques principales</h3>
-                <ul>
-                <li data-i18n="project-geometrik-feature-1">...</li>
-                <li data-i18n="project-geometrik-feature-2">...</li>
-                <li data-i18n="project-geometrik-feature-3">...</li>
-                </ul>
-            </div>
+    </section>
 
-</div>
-
-    </div>
-    
-    <div class="btn-container">
-        <button class="btn btn-color-2 project-btn" onclick="location.href=''" data-i18n="btn-github">
-            GitHub
-        </button>
-        <button class="btn btn-color-2 project-btn project-details-btn" onclick="toggleProjectView('project-2')">
-            Détails
-        </button>
-    </div>
-</div>
-
-     </section>
-    
     <section id="experience">
         <p class="section__text__p1" data-i18n="exp-explore">Explorez Mes</p>
         <h1 class="title" data-i18n="exp-title">Expériences</h1>
@@ -308,42 +302,42 @@
                     <h2 class="experience-sub-title" data-i18n="exp-frontend">Frontend</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>HTML</h3>
                                 <p data-i18n="exp-experienced">Expérimenté</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>CSS</h3>
                                 <p data-i18n="exp-experienced">Expérimenté</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>JavaScript</h3>
-                                <p data-i18n="exp-basic">Basique</p>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>TypeScript</h3>
                                 <p data-i18n="exp-basic">Basique</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>React</h3>
                                 <p data-i18n="exp-basic">Basique</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>Figma</h3>
                                 <p data-i18n="exp-experienced">Expérimenté</p>
@@ -355,42 +349,42 @@
                     <h2 class="experience-sub-title" data-i18n="exp-backend">Backend</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>Java</h3>
                                 <p data-i18n="exp-experienced">Expérimenté</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>Python</h3>
                                 <p data-i18n="exp-experienced">Expérimenté</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>C</h3>
-                                <p data-i18n="exp-basic">Basique</p>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>PHP</h3>
                                 <p data-i18n="exp-basic">Basique</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>SQL</h3>
-                                <p data-i18n="exp-basic">Basique</p>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>Git</h3>
                                 <p data-i18n="exp-experienced">Expérimenté</p>
@@ -398,9 +392,59 @@
                         </article>
                     </div>
                 </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title" data-i18n="exp-other">Librairies et autres</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Ladder</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>GRAFCET</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>RSLogix500</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Bash</h3>
+                                <p data-i18n="exp-basic">Basique</p>
+                            </div>
+                        </article>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>PIXI.js</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node.js</h3>
+                                <p data-i18n="exp-experienced">Expérimenté</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
-                <!-- Currently Learning -->
-                <div class="learning-section">
+            <!-- Currently Learning -->
+            <div class="learning-section">
                 <h3>
                     <span aria-hidden="true"> <img src="./assets/learning.png" alt="learning" class="icon"></span>
                     <span data-i18n="learning-title">Actuellement en apprentissage</span>
@@ -408,39 +452,30 @@
 
                 <div class="learning-tags">
                     <span class="learning-tag">Maven</span>
-                    <span class="learning-tag">CI/CD Automation</span>
-                    <span class="learning-tag">Jira</span>
-                    <span class="learning-tag">JUnit</span>
-                    <span class="learning-tag">Playwright</span>
-                    <span class="learning-tag">Reverse Engineering</span>
+                    <span class="learning-tag">Dev Testing</span>
+                    <span class="learning-tag">OOP</span>
+                    <span class="learning-tag">C#</span>
+                    <span class="learning-tag">Python</span>
+                    <span class="learning-tag">C++</span>
                     <span class="learning-tag">Machine Learning</span>
                     <span class="learning-tag">Eclipse</span>
                     <span class="learning-tag">Software Maintenance</span>
-                    <span class="learning-tag">TDD</span>
                 </div>
-                </div>
+            </div>
         </div>
-        
+
     </section>
-    
+
     <section id="contact">
         <p class="section__text__p1" data-i18n="contact-reach">Me joindre</p>
         <h1 class="title" data-i18n="contact-title">Contactez moi</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="Email icon" 
-                class="icon contact-icon email-icon" 
-                />
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
                 <p><a href="mailto:naya.wakim.1@ens.etsmtl.ca">naya.wakim.1@ens.etsmtl.ca</a></p>
             </div>
             <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="LinkedIn icon" 
-                class="icon contact-icon" 
-                />
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
                 <p><a href="https://www.linkedin.com/in/naya-wakim-9189111b0">LinkedIn</a></p>
             </div>
         </div>
@@ -458,7 +493,8 @@
         </nav>
         <p data-i18n="footer-copyright">Copyright © 2026 Naya Wakim. Tous droits réservés.</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
