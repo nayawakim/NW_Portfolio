@@ -59,12 +59,19 @@ const translations = {
         'project-survivalkit-feature-3': 'Smooth iOS experience (React Native + Expo) with polished UI',
 
 
-        //project 
+        //project 2
         'project-geometrik-title': 'Geometrik — Video game',
         'project-geometrik-desc': 'Action game inspired by Vampire Survivors, featuring geometric heroes battling waves of enemies.',
         'project-geometrik-feature-1': 'A Web Client and a Desktop Client',
         'project-geometrik-feature-2': 'Score system and leaderboard for top players',
         'project-geometrik-feature-3': 'Varied enemies and bosses represented by different geometric shapes',
+
+        //project 3
+        'project-travelapp-title': 'Montreal Tourist Agency — Android App',
+        'project-travelapp-desc': 'An inovative platform allowing users to search, view and book trips.',
+        'project-travelapp-feature-1': 'Project completed as part of the Mobile Applications and UX course',
+        'project-travelapp-feature-2': 'Make travel planning easier',
+        'project-travelapp-feature-3': 'Provide detailed information about the destinations',
 
 
 
@@ -146,7 +153,7 @@ const translations = {
         'project-travelapp-desc': "Plateforme intuitive permettant aux utilisateurs de rechercher, consulter et réserver des voyages.",
         'project-travelapp-feature-1': 'Projet réalisé dans le cadre du cours Aplications mobiles et UX',
         'project-travelapp-feature-2': 'Faciliter la planification des voyages',
-        'project-travelapp-feature-3': ' fournissant des informations détaillées sur les destinations',
+        'project-travelapp-feature-3': 'Fournisser des informations détaillées sur les destinations',
 
         
         
