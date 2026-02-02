@@ -143,7 +143,7 @@ const translations = {
 
             //Projet 3
         'project-travelapp-title': 'Agence touristique Montréal — App Android',
-        'project-travelapp-desc': "Plateforme intuitive permetant aux utilisateurs de rechercher, consulter et réserver des voyages.",
+        'project-travelapp-desc': "Plateforme intuitive permettant aux utilisateurs de rechercher, consulter et réserver des voyages.",
         'project-travelapp-feature-1': 'Projet réalisé dans le cadre du cours Aplications mobiles et UX',
         'project-travelapp-feature-2': 'Faciliter la planification des voyages',
         'project-travelapp-feature-3': ' fournissant des informations détaillées sur les destinations',
