@@ -119,9 +119,9 @@ const translations = {
         // Projects section
         'projects-recent': 'Mes projets récents',
         'projects-title': 'Projets',
-        'project-1-title': 'Trading algorithmique - machine learning',
-        'project-2-title': 'SurvivalKit',
-        'project-3-title': 'Pokedex',
+        'project-1-title': 'SurvivalKit',
+        'project-2-title': 'Geometrik',
+        'project-3-title': 'Agence de tourisme',
         'btn-github': 'GitHub',
         'btn-details': 'Détails',
 
@@ -141,6 +141,12 @@ const translations = {
         'project-geometrik-feature-2': 'Système de score et classement des meilleurs joueurs',
         'project-geometrik-feature-3': 'Ennemis et boss variés représentés par différentes formes géométriques',
 
+            //Projet 3
+        'project-travelapp-title': 'Agence touristique Montréal — App Android',
+        'project-travelapp-desc': "Plateforme intuitive permetant aux utilisateurs de rechercher, consulter et réserver des voyages.",
+        'project-travelapp-feature-1': 'Projet réalisé dans le cadre du cours Aplications mobiles et UX',
+        'project-travelapp-feature-2': 'Faciliter la planification des voyages',
+        'project-travelapp-feature-3': ' fournissant des informations détaillées sur les destinations',
 
         
         
